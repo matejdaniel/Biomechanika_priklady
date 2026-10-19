@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" width="100%" height="100%" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Sharp arrowheads for axes -->
+    <marker id="arrow-axis" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#111827" />
+    </marker>
+  </defs>
+
+  <!-- Coordinate Axes -->
+  <g stroke="#111827" stroke-width="2.5" stroke-linecap="round">
+    <!-- Y Axis: Síla -->
+    <line x1="70" y1="500" x2="70" y2="90" marker-end="url(#arrow-axis)" />
+    <!-- X Axis: Prodloužení -->
+    <line x1="70" y1="500" x2="660" y2="500" marker-end="url(#arrow-axis)" />
+  </g>
+
+  <!-- Axis Labels -->
+  <text x="70" y="65" font-size="20" font-weight="600" fill="#111827" text-anchor="middle">Síla</text>
+  <text x="640" y="535" font-size="20" font-weight="600" fill="#111827" text-anchor="end">Prodloužení</text>
+
+  <!-- Horizontal Braces for Regions I, II, III at the Top (y ≈ 75) -->
+  <!-- Curly Brace Generator Macro Shape: M x1,y Q mid,y mid,y-tip ... -->
+  <g fill="none" stroke="#111827" stroke-width="1.8" stroke-linecap="round">
+    <!-- Region I Brace: x from 70 to 170 (mid=120) -->
+    <path d="M 70 75 
+             C 70 70, 100 70, 115 70 
+             C 118 70, 120 62, 120 58 
+             C 120 62, 122 70, 125 70 
+             C 140 70, 170 70, 170 75" />
+
+    <!-- Region II Brace: x from 170 to 430 (mid=300) -->
+    <path d="M 170 75 
+             C 170 70, 270 70, 295 70 
+             C 298 70, 300 62, 300 58 
+             C 300 62, 302 70, 305 70 
+             C 330 70, 430 70, 430 75" />
+
+    <!-- Region III Brace: x from 430 to 640 (mid=535) -->
+    <path d="M 430 75 
+             C 430 70, 510 70, 530 70 
+             C 533 70, 535 62, 535 58 
+             C 535 62, 537 70, 540 70 
+             C 560 70, 640 70, 640 75" />
+  </g>
+
+  <!-- Region Labels (Roman Numerals) -->
+  <g font-size="22" font-weight="bold" fill="#111827" text-anchor="middle">
+    <text x="120" y="42">I</text>
+    <text x="300" y="42">II</text>
+    <text x="535" y="42">III</text>
+  </g>
+
+  <!-- Tensile Curve (Toe Region -> Linear Region -> Yield/Plateau Region) -->
+  <!-- Start (70, 500) -> Pt A (205, 450) -> Pt B (315, 355) -> Pt C (420, 260) -> Pt D (650, 195) -->
+  <path d="M 70 500 
+           C 130 500, 175 480, 205 450 
+           L 420 260 
+           C 490 198, 570 193, 650 195" 
+        fill="none" stroke="#111827" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Points on Curve: A, B, C, D -->
+  <g fill="#111827">
+    <!-- Point A -->
+    <circle cx="205" cy="450" r="7.5" />
+    <text x="190" y="435" font-size="21" font-weight="600">A</text>
+
+    <!-- Point B -->
+    <circle cx="315" cy="355" r="7.5" />
+    <text x="290" y="340" font-size="21" font-weight="600">B</text>
+
+    <!-- Point C -->
+    <circle cx="420" cy="260" r="7.5" />
+    <text x="395" y="245" font-size="21" font-weight="600">C</text>
+
+    <!-- Point D -->
+    <circle cx="650" cy="195" r="7.5" />
+    <text x="630" y="175" font-size="21" font-weight="600">D</text>
+  </g>
+</svg>

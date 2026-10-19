@@ -1,0 +1,24 @@
+version: 1
+project:
+    id: 83452488-9af1-42e7-9323-f798d0ea2f76
+    title: Příklady z biomechaniky
+    description: Příklady ze zkouškových problémů z biomechaniky pro studium fyzioterapie
+    authors: Matej Daniel
+    github: https://github.com/matejdaniel/Biomechanika_priklady
+
+    toc:
+        - file: README.md
+        - file: intro.md
+        - file: sily.ipynb
+        - file: teziste.ipynb
+        - file: moment.ipynb
+        - file: statika.ipynb
+        - file: kinematika.ipynb
+        - file: dynamika.ipynb
+        - file: energie.ipynb
+        - file: pruznost_pevnost.ipynb
+        - file: skalovani.ipynb
+
+site:
+    template: book-theme
+    logo: logo.png

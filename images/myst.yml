@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 5fc2ffe0-8974-4af3-a132-0a0f841dd404
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/matejdaniel/Biomechanika_priklady
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
