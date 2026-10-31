@@ -1,3 +1,0 @@
-Font Caveat (c) The Caveat Project Authors (https://github.com/googlefonts/caveat)
-Licencováno pod SIL Open Font License 1.1 – https://openfontlicense.org
-Soubor je sloučením latin + latin-ext variant z balíčku @fontsource/caveat.
